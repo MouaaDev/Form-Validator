@@ -1,0 +1,115 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background: #f3f3f3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+label,
+input,
+small,
+button {
+  display: block;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 1.5rem;
+  font-size: 2.6rem;
+  font-weight: bold;
+}
+
+.container {
+  width: 400px;
+  background: #d7d7d7;
+  border-radius: 10px;
+}
+
+.form {
+  padding: 4rem 3rem;
+}
+
+.form-control {
+  margin-bottom: 1.2rem;
+  padding-bottom: 2rem;
+  font-size: 1.4rem;
+  position: relative;
+}
+
+.form-control label {
+  color: #4e4e4e;
+  margin-bottom: 0.8rem;
+}
+
+.form-control input {
+  font-size: 1.2rem;
+  padding: 0.8rem;
+  border-radius: 5px;
+  border: 2px solid #f0f0f0;
+  width: 100%;
+}
+
+.form-control small {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  font-size: 1.3rem;
+  visibility: hidden;
+}
+
+.form-control input:focus {
+  outline: none;
+  border-color: #4e4e4e;
+}
+.form-control.success input {
+  outline: none;
+  border-color: #0f8000;
+}
+.form-control.error input {
+  outline: none;
+  border-color: #bb0101;
+}
+
+.form-control.error small {
+  visibility: visible;
+  color: #bb0101;
+}
+
+.form-control i {
+  position: absolute;
+  bottom: 30px;
+  right: 10px;
+  color: #bababa;
+  cursor: pointer;
+}
+
+.form-control i:hover {
+  color: #4e4e4e;
+}
+
+button {
+  width: 100%;
+  padding: 1.2rem;
+  cursor: pointer;
+  background: #0f8000;
+  font-size: 1.6rem;
+  font-family: inherit;
+  font-weight: 600;
+  color: #f3f3f3;
+  border: none;
+  border-radius: 5px;
+  margin-top: 1.2rem;
+}
